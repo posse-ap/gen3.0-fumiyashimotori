@@ -33,4 +33,20 @@ $submit_button.click((e) => {
   });
   
 
-// チェックボックス
+// 日付
+
+var sample = document.getElementById('sample');
+var fp = flatpickr(sample, {
+    dateFormat: 'Y-n-j(l)'
+});
+var fp = flatpickr(sample, {
+ position: 'auto'
+});
+
+const $calendar = $('.calendar');
+const $date = $('.date');
+
+$calendar.click((e) => {
+  $date.addClass('openDate');
+})
+

@@ -9,6 +9,9 @@
     <title>ph1 week13 1問目</title>
     <link rel="stylesheet" href="recet.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
   </head>
 
   <body>
@@ -35,7 +38,12 @@
             <!-- 学習日 -->
             <div class="modal-box-typeA">
               <h2>学習日</h2>
-              <div class="modal-date"></div>
+              <div class="modal-date">
+                <input type="text" class = "calendar" id="sample">
+              </div>
+              <div class="date">
+
+              </div>
             </div>
             <!--  -->
             <!-- 学習コンテンツ（複数選択可） -->
@@ -136,7 +144,11 @@
               <h2>twitter用コメント</h2>
               <div></div>
             </div>
-            <div></div>
+            <div>
+              <button class="twitter-btn">
+                記録・投稿
+              </button>
+            </div>
           </div>
           
         </div>
