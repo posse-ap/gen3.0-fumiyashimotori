@@ -50,3 +50,4 @@ $calendar.click((e) => {
   $date.addClass('openDate');
 })
 
+console.log(typeof "false");
