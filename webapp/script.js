@@ -50,4 +50,36 @@ $calendar.click((e) => {
   $date.addClass('openDate');
 })
 
-console.log(typeof "false");
+
+
+// 棒グラフ
+var ctx = document.getElementById('myChart-time').getContext('2d');
+    var chart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['1','2', '3', '4', '5','6', '7','8', '10','11','12', '13', '14', '15', '16', '17', '18',  '19','20','21',  '22', '23', '24', '25', '26', '27','28', '29', '30', ],
+            datasets: [{
+                label: 'マイグラフ',
+                data: [2.5, 8, 5, 2, 2.0, 3.0, 4.5, 1.0, 5, 2, 2.0, 3.0,2.5, 1.0, 5, 2, 2.0, 3.0, 4.5, 1.0, 5, 2, 2.0, 3.0,5, 2, 2.0, 3.0,],
+                backgroundColor: 'rgb(30, 144, 255)',
+                borderColor: 'rgb(255, 99, 132)'
+            }]
+        },
+        options:{
+          scales: {
+              xAxes: [{
+                  display: true,                 
+
+              }],
+              yAxes: [{  
+                  display: true,             
+                  ticks: {
+                      callback: function(value) {
+                          return value + 'h';
+                      }
+                  }
+              }],
+          },
+         
+      }
+      });
