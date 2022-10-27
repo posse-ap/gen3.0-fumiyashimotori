@@ -32,6 +32,14 @@ $submit_button.click((e) => {
     // window.location.reload();
   });
   
+//  Twitterボタン
+//openTwitter(投稿文、シェアするURL、ハッシュタグ、提供元アカウント)
+function openTwitter(text,url,hash,account) {
+	var turl = "https://twitter.com/intent/tweet?text="+text+"&url="+url+"&hashtags="+hash+"&via="+account;
+	window.open(turl,'_blank');
+}
+//呼び出し例：openTwitter("テスト","https://santmove.com","santmove","santmove_com");
+
 
 // 日付
 
@@ -72,11 +80,11 @@ var ctx = document.getElementById('myChart-time').getContext('2d');
 
               }],
               yAxes: [{  
-                  display: true,             
-                  ticks: {
-                      callback: function(value) {
-                          return value + 'h';
-                      }
+                  display: true,  
+                  ticks : {
+                    callback: function(tick) {
+                      return tick.toString() + '年';
+                    }
                   }
               }],
           },
