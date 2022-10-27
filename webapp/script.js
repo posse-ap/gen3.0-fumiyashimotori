@@ -83,3 +83,47 @@ var ctx = document.getElementById('myChart-time').getContext('2d');
          
       }
       });
+
+// 円グラフ左
+var ctx = document.getElementById('myChart-lng').getContext('2d');
+
+new Chart(ctx, {
+  type: 'doughnut',
+  data: {
+    datasets: [{
+      data: [42,18,10,8,8,7,4,3],
+      backgroundColor: ['#342de6','#245b7e','#61a3cc','#9ed7fa','#dea4c2','#7e4d7d','#6935a9','#462974',],
+      borderWidth: 0,
+    }]
+  },
+  options: {   
+    plugins: {
+        data: {
+            color: '#000',
+            font: {
+                weight: 'bold',
+                size: 20,
+            },
+            formatter: (value,ctx) => {
+                return value + '%';
+            }
+        }
+    },
+}
+
+})
+
+
+// 円グラフ右
+var ctx = document.getElementById('myChart-contents').getContext('2d');
+
+new Chart(ctx, {
+  type: 'doughnut',
+  data: {
+    datasets: [{
+      data: [42,33,25,],
+      backgroundColor: ['#342de6','#245b7e','#61a3cc',],
+      borderWidth: 0
+    }]
+  }
+})
