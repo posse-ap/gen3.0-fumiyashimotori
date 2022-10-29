@@ -2,54 +2,56 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="【アカウント名(例：@santmove_com)】" />
-<meta name="twitter:title" content="【シェアするページのタイトル】" />
-<meta name="twitter:description" content="【シェアするページの概要】" />
-<meta name="twitter:image" content="【シェアするページのアイコン画像(絶対パス)】" />
-<meta name="twitter:url" content="【シェアするページのURL】" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="【アカウント名(例：@santmove_com)】" />
+  <meta name="twitter:title" content="【シェアするページのタイトル】" />
+  <meta name="twitter:description" content="【シェアするページの概要】" />
+  <meta name="twitter:image" content="【シェアするページのアイコン画像(絶対パス)】" />
+  <meta name="twitter:url" content="【シェアするページのURL】" />
 
-    <title>ph1 week13 1問目</title>
-    <link rel="stylesheet" href="recet.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+  <title>ph1 week13 1問目</title>
+  <link rel="stylesheet" href="recet.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
 
-  </head>
+</head>
 
-  <body>
-    <header>
-      <div class="header-set">
+<body>
+  <header>
+    <div class="header-set">
       <div class="header-logo">
-        <img src="/img/logo.svg" alt="">
+        <img src="./img/logo.svg" alt="">
       </div>
       <div class="header-week">
-        <div>1</div>
+        <div>4th</div>
         <div>week</div>
       </div>
     </div>
-    
+
     <div class="modal-container">
       <button class="header-btn">
         記録・投稿
       </button>
       <!-- モーダル　メイン -->
       <div class="modal">
-        <button class="modal-btn"><p> x </p></button>
+        <button class="modal-btn">
+          <p> x </p>
+        </button>
         <div class="modal-boxes">
           <div class="modal-box-left">
             <!-- 学習日 -->
             <div class="modal-box-typeA">
               <h2>学習日</h2>
               <div class="modal-date">
-                <input type="text" class = "calendar" id="sample">
+                <input type="text" class="calendar" id="sample">
               </div>
               <div class="date">
 
@@ -65,7 +67,7 @@
                   <label for="N" class="label">
                     <span class="span">✔</span>N予備校
                   </label>
-                  
+
                   <input type="checkbox" class="input-checkbox" name="contents" value="2" id="dot">
                   <label for="dot" class="label">
                     <span class="span">✔</span>ドットインストール
@@ -84,63 +86,63 @@
               <div>
                 <!-- 一層目 -->
                 <div class="lng-first">
-                  
+
                   <input type="checkbox" class="input-checkbox" name="contents" value="1" id="HTML">
                   <label for="HTML" class="label">
                     <span class="span">✔</span>HTML
                   </label>
-                  
+
                   <input type="checkbox" class="input-checkbox" name="contents" value="2" id="CSS">
                   <label for="CSS" class="label">
                     <span class="span">✔</span>CSS
                   </label>
-                  
+
                   <input type="checkbox" class="input-checkbox" name="contents" value="3" id="JavaScript">
                   <label for="JavaScript" class="label">
                     <span class="span">✔</span>JavaScript
                   </label>
-                  
-                  
+
+
                 </div>
-                
+
                 <!-- 二層目 -->
                 <div class="lng-second">
-                  
+
                   <input type="checkbox" class="input-checkbox" name="contents" value="4" id="PHP">
                   <label for="PHP" class="label">
                     <span class="span">✔</span>PHP
                   </label>
-                  
+
                   <input type="checkbox" class="input-checkbox" name="contents" value="5" id="Laravel">
                   <label for="Laravel" class="label">
                     <span class="span">✔</span>Laravel
                   </label>
-                  
+
                   <input type="checkbox" class="input-checkbox" name="contents" value="3" id="SQL">
                   <label for="SQL" class="label">
                     <span class="span">✔</span>SQL
                   </label>
-                  
+
                   <input type="checkbox" class="input-checkbox" name="contents" value="4" id="SHELL">
                   <label for="SHELL" class="label">
                     <span class="span">✔</span>SHELL
                   </label>
-                  
+
                 </div>
-                
+
                 <!-- 三層目 -->
                 <div class="lng-third">
-                  
+
                   <input type="checkbox" class="input-checkbox" name="contents" value="5" id="info">
                   <label for="info" class="label">
                     <span class="span">✔</span>情報システム基礎知識(その他)
                   </label>
-                  
-                  
-                  
-                  
+
+
+
+
                 </div>
-                
+
               </div>
             </div>
             <!--  -->
@@ -158,34 +160,37 @@
             </div>
             <div>
               <input type="checkbox" class="input-checkbox" name="twitter" value="1" id="twitter">
-                  <label for="twitter" class="twitter">
-                    <span class="span">✔</span>
-                  </label>
-                  twitterにシェアする
+              <label for="twitter" class="twitter">
+                <span class="span">✔</span>
+              </label>
+              twitterにシェアする
             </div>
           </div>
-          
+
         </div>
         <div class="btn-wrapper"><button class="submit-btn">記録・投稿</button></div>
-        
+
       </div>
       <!--モーダル グルグル -->
-        <div class="loading-wrapper">
-         <span class="circle">
-           
-         </span>
-        </div>
+      <div class="loading-wrapper">
+        <span class="circle">
+
+        </span>
+      </div>
       <!-- モーダル　投稿完了 -->
       <div class="done">
-        <button class="modal-btn"><p> x </p></button>
+        <button class="modal-btn">
+          <p> x </p>
+        </button>
         <p>投稿が完了しました</p>
       </div>
     </div>
-  </div>
-  
-</header>
-<main class="container">
-  <div class="box-wrapper1">
+    </div>
+
+  </header>
+  <main>
+    <div class="container">
+      <div class="box-wrapper1">
         <ul class="box1">
           <li class="box-item">
             <div class="article">Today</div>
@@ -213,8 +218,8 @@
           <div><canvas id="myChart-lng"></canvas></div>
           <div>
 
-            
-                  
+
+
           </div>
         </div>
         <div class="box3">
@@ -223,8 +228,8 @@
           <div></div>
         </div>
       </div>
-      
-    </main>
+
+    </div>
     <div class="main-bottom-box">
       <button>＜</button>
       <div class="bottom-box-date">
@@ -235,11 +240,13 @@
       </div>
       <button>＞</button>
     </div>
-    
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-    
-  </body>
+  </main>
+
+ 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
+</body>
 
 </html>
-

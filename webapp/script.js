@@ -67,9 +67,9 @@ var fp = flatpickr(sample, {
 const $calendar = $('.calendar');
 const $date = $('.date');
 
-$calendar.click((e) => {
-  $date.addClass('openDate');
-})
+// $calendar.click((e) => {
+//   $date.addClass('openDate');
+// })
 
 
 
@@ -78,36 +78,44 @@ var ctx = document.getElementById('myChart-time').getContext('2d');
     var chart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ['1','2', '3', '4', '5','6', '7','8', '10','11','12', '13', '14', '15', '16', '17', '18',  '19','20','21',  '22', '23', '24', '25', '26', '27','28', '29', '30', ],
+            labels: ['','2', '', '4', '','6', '','8','', '10','','12', '', '14', '', '16', '', '18',  '','20','',  '22', '', '24', '', '26', '','28', '', '30', ],
             datasets: [{
                 
-                data: [2.5, 8, 5, 2, 2.0, 3.0, 4.5, 1.0, 5, 2, 2.0, 3.0,2.5, 1.0, 5, 2, 2.0, 3.0, 4.5, 1.0, 5, 2, 2.0, 3.0,5, 2, 2.0, 3.0,7],
+                data: [2.5, 8, 5, 2, 2.0, 3.0, 4.5, 1.0, 5, 2, 2.0, 3.0,2.5, 1.0, 5, 2, 2.0, 3.0, 4.5, 1.0, 5, 2, 2.0, 3.0,5, 2, 2.0, 3.0,7,7],
                 backgroundColor: 'rgb(30, 144, 255)',
                 borderColor: 'rgb(255, 99, 132)'
             }],
             
           },
             options:{
+              
               scales: {
                
                 x:{
                   grid:{
                     drawOnChartArea:false,
                   },
+                  
                 },
                 y:{
                   grid:{
                     drawOnChartArea:false,
                   },
                   ticks:{
-                    callback: function(tick){
-                      return tick.toString()+'h';
-                    }
+                    callback: function(value) {
+                      return ((value % 2) == 0)? value + 'h': ''
+                    },
                   }
                 },
 
               },
-             
+              plugins: {
+                  legend:{
+                    display: false,
+                    
+                  },       
+              },
+
           },
       });
         
