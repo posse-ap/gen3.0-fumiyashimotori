@@ -12,6 +12,7 @@ $closeButton.click((e) => {
   window.location.reload();
 })
 
+
 //  Twitterボタン
 //openTwitter(投稿文、シェアするURL、ハッシュタグ、提供元アカウント)
 
@@ -66,10 +67,16 @@ var fp = flatpickr(sample, {
 
 const $calendar = $('.calendar');
 const $date = $('.date');
+const $closeBtn =$('.a-btn');
 
-// $calendar.click((e) => {
-//   $date.addClass('openDate');
-// })
+$calendar.click((e) => {
+  $date.addClass('openDate');
+  $closeBtn.addClass('active');
+});
+$closeBtn.click((e) => {
+  $date.remove('openDate');
+});
+
 
 
 
